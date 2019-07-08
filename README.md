@@ -62,4 +62,5 @@ Eles podem te auxiliar no desenvolvimento do teste:
 - [ ] Envie o link do sandbox para [codesubmissions@vagas.com.br](codesubmissions@vagas.com.br) 
 - [ ] Coloque no assunto do email: "Front-end Developer VAGAS.com - *seu nome aqui*"
 - [ ] Se possível deixe alguns de seus contatos como Linkedin e telefones
+- [ ] Antes de enviar verifique se o link do sandbox é o correto e se tudo esta funcionando corretamente
 - [ ] E em breve retornaremos com mais detalhes :blue_heart:
