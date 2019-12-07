@@ -1,0 +1,175 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font- : "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  --normal-buttons: #2F3676;
+
+  --disabled-buttons: #C5CFD6;
+  --disabled-buttons-border: #555555;
+
+  --hover-buttons : #191847; 
+  --hover-buttons-border: #2F3676;
+
+  --error: #F59393;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;
+}
+
+main {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px;
+}
+
+header, form, fieldset{
+  margin-bottom: 32px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.stickers_picker__checkbox {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.stickers_picker__checkbox input{
+  margin-right: 9px;
+}
+
+header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+}
+
+header .title {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+header .title span {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.46;
+}
+
+form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 8px;
+  color: #071723;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+li input {
+  width: 24px;
+  height: 24px;
+  background-color: var(--normal-buttons);
+}
+
+fieldset {
+  padding: 0 32px;
+  border: none;
+}
+
+.quant_picker__counter {
+  display: flex;
+  align-items: center;
+}
+
+.quant_picker__counter svg {
+  fill: #2f3676;
+}
+
+.quant_picker__counter input {
+  text-align: center;
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 8px;
+  width: 60px;
+  height: 42px;
+}
+
+.quant_picker__counter button {
+  border: none;
+  background: none;
+  height: 42px;
+}
+
+.quant_picker__counter button svg:hover {
+  fill: var(--hover-buttons);
+}
+
+footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer button {
+  appearance: none;
+  background: #2f3676;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 32px;
+}
+
+footer button:focus,
+footer button:hover {
+  padding: 6px 30px;
+  border: 2px solid #2f3676;
+  background: #191847;
+}
+
+#kkk {
+  background-color: black;
+}
