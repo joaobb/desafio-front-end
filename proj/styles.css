@@ -42,22 +42,26 @@ main {
   width: 550px;
 }
 
-header, form, fieldset{
+header, fieldset {
   margin-bottom: 32px;
 }
 
 h4 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .stickers_picker__checkbox {
   display: flex;
   align-items: center;
 
+  width: min-content;
+
   font-size: 14px;
   font-weight: normal;
+
+  cursor: pointer;
 }
 
 .stickers_picker__checkbox input{
@@ -98,7 +102,7 @@ form textarea {
 
 li {
   list-style: none;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 li input {
@@ -170,6 +174,35 @@ footer button:hover {
   background: #191847;
 }
 
-#kkk {
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.stickers_picker__checkbox {}
+
+.stickers_picker__checkbox span {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+
+  background-color: var(--normal-buttons);
+}
+
+.stickers_picker__checkbox input:checked ~  span {
   background-color: black;
 }
+
+.stickers_picker__checkbox input:checked ~  span::after {
+  display: block;
+left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
