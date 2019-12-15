@@ -52,7 +52,7 @@ h4 {
   margin-bottom: 15px;
 }
 
-.stickers_picker__checkbox {
+.stickers_picker label {
   display: flex;
   align-items: center;
 
@@ -62,10 +62,6 @@ h4 {
   font-weight: normal;
 
   cursor: pointer;
-}
-
-.stickers_picker__checkbox input{
-  margin-right: 9px;
 }
 
 header {
@@ -180,29 +176,25 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-.stickers_picker__checkbox {}
+.stickers_picker__checkbox {
+  margin-right: 9px;
+}
 
-.stickers_picker__checkbox span {
+.stickers_picker__checkbox::after {
+  content: "";
   position: absolute;
   height: 24px;
   width: 24px;
   border-radius: 4px;
-
+  
+  text-align: center;
   background-color: var(--normal-buttons);
+
+  cursor: pointer;
 }
 
-.stickers_picker__checkbox input:checked ~  span {
-  background-color: black;
+.stickers_picker__checkbox:checked::after {
+  content: "\2714";
+  font-size: 24px;
+  color: white;
 }
-
-.stickers_picker__checkbox input:checked ~  span::after {
-  display: block;
-left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid green;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
